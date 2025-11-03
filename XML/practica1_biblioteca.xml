@@ -1,6 +1,35 @@
 <biblioteca>
-    <llibres>
-    <categoria type=ficcio>
-        <nom>Ficcio</nom>
-        <llibreRef isbn="978-84-123456-7-8"/>
-        <llibreRef isbn="978-84-876543-2-1"/>
+    <seccions>
+        <seccio>
+            <tipus>Ficció</tipus>
+            <llibre isbn="978-84-123456-7-8">
+                <titol>Histories de Montilivi</titol>
+                <autors>
+                    <autor>Laura Domenech Sala</autor>
+                    <autor>Marc Serra Casas</autor>
+                </autors>
+                <editorial>Edicions Emporda</editorial>
+                <anysEdicio>
+                    <any>2018</any>
+                    <any>2021</any>
+                    <any>2024</any>
+                </anysEdicio>
+            </llibre>
+        </seccio>
+        <seccio>
+            <tipus>Novel·la</tipus>
+            <llibre isbn="978-84-876543-2-1">
+                <titol>Histories de Montilivi 2: Ara es personal</titol>
+                <autors>
+                    <autor>Anna Garcia Marti</autor>
+                </autors>
+                <editorial>Edicions Emporda</editorial>
+                <anysEdicio>
+                    <any>2018</any>
+                    <any>2021</any>
+                    <any>2024</any>
+                </anysEdicio>
+            </llibre>
+        </seccio>
+    </seccions>
+</biblioteca>
