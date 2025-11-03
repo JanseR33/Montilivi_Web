@@ -1,0 +1,21 @@
+<persona estatcivil="soltera" situacioLaboral="actiu">
+    <nif>12345678A</nif>
+    <nom>Anna</nom>
+    <cognom1>Garcia</cognom1>
+    <cognom2>Marti</cognom2>
+    <adreca>
+        <carrer>Carrer Les Flors</carrer>
+        <num>42</num>
+        <poblacio>Girona</poblacio>
+    </adreca>
+    <dataNaixement>
+        <any>1994</any>
+        <mes>08</mes>
+        <dia>17</dia>
+    </dataNaixement>
+    <urlFoto>https://url.exemple.foto</urlFoto>
+    <contacte>
+        <telefon>600123456</telefon>
+        <correu>anna.garcia@example.com</correu>
+    </contacte>
+</persona>
