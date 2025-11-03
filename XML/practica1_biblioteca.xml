@@ -1,0 +1,6 @@
+<biblioteca>
+    <llibres>
+    <categoria type=ficcio>
+        <nom>Ficcio</nom>
+        <llibreRef isbn="978-84-123456-7-8"/>
+        <llibreRef isbn="978-84-876543-2-1"/>

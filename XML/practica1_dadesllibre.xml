@@ -1,62 +1,102 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<llibre>
-	<isbn>978-84-123456-7-8</isbn>
-	<titol>Histories de Girona</titol>
-	<autors>
-		<persona estatcivil="casada" situacioLaboral="actiu">
-			<nif>24567890B</nif>
-			<nom>Laura</nom>
-			<cognom1>Domenech</cognom1>
-			<cognom2>Sala</cognom2>
+<llibres>
+	<llibre>
+		<isbn>978-84-123456-7-8</isbn>
+		<titol>Histories de Montilivi</titol>
+		<autors>
+			<autor estatcivil="casada" situacioLaboral="actiu">
+				<nif>34567890B</nif>
+				<nom>Laura</nom>
+				<cognom1>Domenech</cognom1>
+				<cognom2>Sala</cognom2>
+				<adreca>
+					<carrer>Carrer Riu Onyar</carrer>
+					<num>11</num>
+					<poblacio>Girona</poblacio>
+				</adreca>
+				<dataNaixement>
+					<any>1988</any>
+					<mes>04</mes>
+					<dia>09</dia>
+				</dataNaixement>
+				<urlFoto>https://exemple.com/fotos/laura</urlFoto>
+				<contacte>
+					<telefon>601987654</telefon>
+					<correu>laura.domenech@example.com</correu>
+				</contacte>
+			</autor>
+			<autor estatcivil="solter" situacioLaboral="aturat">
+				<nif>56890123C</nif>
+				<nom>Marc</nom>
+				<cognom1>Serra</cognom1>
+				<cognom2>Casas</cognom2>
+				<adreca>
+					<carrer>Avinguda Rambla</carrer>
+					<num>73</num>
+					<poblacio>Girona</poblacio>
+				</adreca>
+				<dataNaixement>
+					<any>1990</any>
+					<mes>11</mes>
+					<dia>21</dia>
+				</dataNaixement>
+				<urlFoto>https://exemple.com/fotos/marc</urlFoto>
+				<contacte>
+					<telefon>625123987</telefon>
+					<correu>marc.serra@example.com</correu>
+				</contacte>
+			</autor>
+		</autors>
+		<editorial>
+			<nom>Edicions Emporda</nom>
 			<adreca>
-				<carrer>Carrer Riu Onyar</carrer>
-				<num>11</num>
-				<poblacio>Girona</poblacio>
+				<carrer>Carrer Costa Brava</carrer>
+				<num>5</num>
+				<poblacio>Figueres</poblacio>
 			</adreca>
-			<dataNaixement>
-				<any>1988</any>
-				<mes>04</mes>
-				<dia>09</dia>
-			</dataNaixement>
-			<urlFoto>https://example.com/fotos/laura-domenech.jpg</urlFoto>
-			<contacte>
-				<telefon>601987654</telefon>
-				<correu>laura.domenech@example.com</correu>
-			</contacte>
-		</persona>
-		<persona estatcivil="solter" situacioLaboral="aturat">
-			<nif>56890123C</nif>
-			<nom>Marc</nom>
-			<cognom1>Serra</cognom1>
-			<cognom2>Casas</cognom2>
+		</editorial>
+		<anysEdicio>
+			<any>2018</any>
+			<any>2021</any>
+			<any>2024</any>
+		</anysEdicio>
+	</llibre>
+	<llibre>
+		<isbn>978-84-876543-2-1</isbn>
+		<titol>Histories de Montilivi 2: Ara es personal</titol>
+		<autors>
+			<autor estatcivil="soltera" situacioLaboral="actiu">
+				<nif>12345678A</nif>
+				<nom>Anna</nom>
+				<cognom1>Garcia</cognom1>
+				<cognom2>Marti</cognom2>
+				<adreca>
+					<carrer>Carrer Les Flors</carrer>
+					<num>42</num>
+					<poblacio>Girona</poblacio>
+				</adreca>
+				<dataNaixement>
+					<any>1994</any>
+					<mes>08</mes>
+					<dia>17</dia>
+				</dataNaixement>
+				<urlFoto>https://url.exemple.foto</urlFoto>
+				<contacte>
+					<telefon>600123456</telefon>
+					<correu>anna.garcia@example.com</correu>
+				</contacte>
+			</autor>
+		<editorial>
+			<nom>Edicions Emporda</nom>
 			<adreca>
-				<carrer>Avinguda Rambla</carrer>
-				<num>73</num>
-				<poblacio>Girona</poblacio>
+				<carrer>Carrer Costa Brava</carrer>
+				<num>5</num>
+				<poblacio>Figueres</poblacio>
 			</adreca>
-			<dataNaixement>
-				<any>1990</any>
-				<mes>11</mes>
-				<dia>21</dia>
-			</dataNaixement>
-			<urlFoto>https://example.com/fotos/marc-serra.jpg</urlFoto>
-			<contacte>
-				<telefon>625123987</telefon>
-				<correu>marc.serra@example.com</correu>
-			</contacte>
-		</persona>
-	</autors>
-	<editorial>
-		<nom>Edicions Emporda</nom>
-		<adreca>
-			<carrer>Carrer Costa Brava</carrer>
-			<num>5</num>
-			<poblacio>Figueres</poblacio>
-		</adreca>
-	</editorial>
-	<anysEdicio>
-		<any>2018</any>
-		<any>2021</any>
-		<any>2024</any>
-	</anysEdicio>
-</llibre>
+		</editorial>
+		<anysEdicio>
+			<any>2018</any>
+			<any>2021</any>
+			<any>2024</any>
+		</anysEdicio>
+	</llibre>
+</llibres>
