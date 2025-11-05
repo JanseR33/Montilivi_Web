@@ -10,7 +10,7 @@ body {
 }
 
 #contenidor {
-    max-width: 960px;
+    max-width: auto;
     margin: 0 auto;
     background-color: #ffffff;
 }
@@ -81,6 +81,8 @@ main {
     padding: 20px;
     text-align: center;
     margin-bottom: 25px;
+    border-radius: 12px;
+    border: 2px solid #d1b48c;
 }
 
 .presentacio h2 {
@@ -91,6 +93,8 @@ main {
 .llistat-llibres {
     background-color: #f7d9c4;
     padding: 20px;
+    border-radius: 12px;
+    border: 2px solid #d1b48c;
 }
 
 .llistat-llibres h2 {
@@ -112,12 +116,17 @@ main {
     background-color: #ffffff;
     border: 2px solid #d1b48c;
     border-radius: 10px;
-    transition: border-color 0.2s ease, background-color 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .llibre:hover {
     border-color: #9c5f26;
     background-color: #fff5e6;
+    transform: translateY(-6px);
+    box-shadow: 0 16px 28px rgba(0, 0, 0, 0.15);
 }
 
 .portada {
@@ -132,17 +141,57 @@ main {
 .llibre h3 {
     margin: 0 0 8px;
     font-size: 1.2rem;
+    font-weight: 700;
 }
 
 .autor {
     margin: 0 0 10px;
-    font-weight: bold;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.editorial {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #6b4b28;
+}
+
+.editorial span {
+    font-weight: 700;
 }
 
 .resum {
     margin: 0;
-    font-size: 0.95rem;
-    line-height: 1.4;
+    font-size: 0.93rem;
+    line-height: 1.45;
+}
+
+.preu {
+    margin-top: auto;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #9c5f26;
+}
+
+.compra {
+    margin-top: 6px;
+    padding: 10px 14px;
+    border: 2px solid #9c5f26;
+    background-color: #9c5f26;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    align-self: stretch;
+    text-align: center;
+}
+
+.compra:hover {
+    background-color: #ffffff;
+    color: #9c5f26;
 }
 
 footer {
@@ -166,5 +215,9 @@ footer {
     .llibre {
         width: 100%;
         max-width: 320px;
+    }
+
+    .preu {
+        font-size: 1.05rem;
     }
 }
