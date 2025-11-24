@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<note xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="practica3.xsd">
+  <to>Joan</to>
+  <from>Pere</from>
+  <heading>Capçalera</heading>
+  <body>Cos del missatge</body>
+  <date>2023-11-24</date>
+  <phone>666555444</phone>
+</note>
