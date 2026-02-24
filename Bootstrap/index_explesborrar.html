@@ -1,135 +1,203 @@
 <!DOCTYPE html>
 <html lang="ca">
-  <head>
+<head>
     <title>Bootstrap Example</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="Bootstrap5.3.8/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- bootstrap  JS-->
+    <link href="Bootstrap5.3.8/css/bootstrap.min.css" rel="stylesheet">
     <script src="Bootstrap5.3.8/js/bootstrap.bundle.min.js"></script>
-    <!-- bootstrap icons-->
-    <link rel="stylesheet" href="bootstrap-icons-1.13.1/bootstrap-icons.min.css" />
-  </head>
-  <body>
-    <div class="container">
-      <form action="processar.php" method="post">
-        <div class="row mt-3">
-          <div class="col-md-8-mx-auto">
-            <div class="card">
-              <div class="card-header bg-primary text-white">
-                <h4><i class="bi bi-bell me-2"></i> Dades de l'avis</h4>
-              </div>
+    <link rel="stylesheet" href="bootstrap-icons-1.13.1/bootstrap-icons.min.css">
+</head>
 
-              <div class="card-body">
-                <div class="row mb-3 align-items-center">
-                  <div class="col-10">
-                    <label class="col-form-label">Recollir la localització GPS</label>
-                  </div>
-                  <div class="col-2 text-end">
-                    <input type="radio" name="localitzacio" value="gps" class="form-check-input" />
-                  </div>
+<body>
+<div class="container mt-3">
+
+    <form action="processar.php" method="post" class="needs-validation" novalidate>
+
+        <!-- DADES AVÍS -->
+        <div class="row mt-3">
+            <div class="col-md-8 mx-auto">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h4><i class="bi bi-bell me-2"></i> Dades de l'avis</h4>
+                    </div>
+                    <div class="card-body">
+
+                        <div class="row mb-3 align-items-center">
+                            <div class="col-10">
+                                Recollir la localització GPS
+                            </div>
+                            <div class="col-2 text-end">
+                                <input type="radio" name="localitzacio" value="gps" class="form-check-input">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 align-items-center">
+                            <div class="col-10">
+                                Marcar un punt en el mapa
+                            </div>
+                            <div class="col-2 text-end">
+                                <input type="radio" name="localitzacio" value="mapa" class="form-check-input">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <label class="col-form-label">
+                                    Voleu rebre un seguiment?<b class="text-danger">*</b>
+                                </label>
+                                <select name="seguiment" class="form-select" required>
+                                    <option value="">Selecciona una opció</option>
+                                    <option value="si">Sí</option>
+                                    <option value="no">No</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Has de seleccionar una opció.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-4">
+                                <label for="adreca" class="col-form-label">
+                                    Adreça de l'avís<b class="text-danger">*</b>
+                                </label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" id="adreca" name="adreca"
+                                       class="form-control"
+                                       placeholder="Adreça"
+                                       required>
+                                <div class="invalid-feedback">
+                                    L'adreça és obligatòria.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <label class="col-form-label">Descriu l'avís:</label>
+                                <textarea name="descripcio"
+                                          class="form-control"
+                                          rows="3"
+                                          placeholder="Escriu una descripció..."></textarea>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="row mb-3 align-items-center">
-                  <div class="col-10">
-                    <label class="col-form-label">Marcar un punt en el mapa</label>
-                  </div>
-                  <div class="col-2 text-end">
-                    <input type="radio" name="localitzacio" value="mapa" class="form-check-input" />
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <div class="col-12">
-                    <label for="seguiment" class="col-form-label">Voleu rebre un seguiment?<b class="text-danger">*</b></label>
-                  </div>
-                  <div class="col-12">
-                    <select id="seguiment" name="seguiment" class="form-select" required>
-                      <option value="" selected>Selecciona una opció</option>
-                      <option value="si">Sí</option>
-                      <option value="no">No</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="row mb-3 align-items-center">
-                  <div class="col-4">
-                    <label for="adreca" class="col-form-label">Adreça de l'avís<b class="text-danger">*</b></label>
-                  </div>
-                  <div class="col-8">
-                    <input type="text" id="adreca" name="adreca" class="form-control" placeholder="Adreça" required />
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <div class="col-12">
-                    <label for="descripcio" class="col-form-label">Descriu l'avís:</label>
-                  </div>
-                  <div class="col-12">
-                    <textarea id="descripcio" name="descripcio" class="form-control" rows="3" placeholder="Escriu una descripció..."></textarea>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
+        </div>
+
+        <!-- DADES CONTACTE -->
+        <div class="row mt-3">
+            <div class="col-md-8 mx-auto">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h4><i class="bi bi-person-vcard me-2"></i> Dades de contacte</h4>
+                    </div>
+
+                    <div class="card-body">
+
+                        <div class="row mb-3">
+                            <div class="col-4">
+                                <label for="given-name" class="col-form-label">
+                                    Nom<b class="text-danger">*</b>
+                                </label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text"
+                                       id="given-name"
+                                       name="given-name"
+                                       class="form-control"
+                                       required
+                                       pattern="[A-Za-zÀ-ÿ]{2,60}"
+                                       autocomplete="given-name">
+                                <div class="invalid-feedback">
+                                    Nom entre 2 i 60 lletres.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-4">
+                                <label for="family-name" class="col-form-label">
+                                    Cognoms<b class="text-danger">*</b>
+                                </label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text"
+                                       id="family-name"
+                                       name="family-name"
+                                       class="form-control"
+                                       required
+                                       pattern="[A-Za-zÀ-ÿ]{2,60}"
+                                       autocomplete="family-name">
+                                <div class="invalid-feedback">
+                                    Cognoms entre 2 i 60 lletres.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-4">
+                                <label for="tel" class="col-form-label">
+                                    Telèfon<b class="text-danger">*</b>
+                                </label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text"
+                                       id="tel"
+                                       name="tel"
+                                       class="form-control"
+                                       required
+                                       pattern="[+]?[0-9]{9,15}"
+                                       autocomplete="tel">
+                                <div class="invalid-feedback">
+                                    Telèfon vàlid (9-15 dígits).
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="row mt-3">
-          <div class="col-md-8-mx-auto">
-            <div class="card">
-              <div class="card-header bg-primary text-white">
-                <h4><i class="bi bi-person-vcard me-2"></i> Dades de contacte</h4>
-              </div>
-
-              <div class="card-body">
-                <div class="row mb-3">
-                    <div class="col-4">
-                        <label for="given-name" class="col-form-label">Nom<b class="text-danger">*</b></label>
-                    </div>
-                    <div class="col-8">
-                        <input type="text" id="given-name" name="given-name" class="form-control"
-                        placeholder="Escriu aquí el teu nom"
-                        title="El nom ha de contenir entre 2 i 60 caràcters"
-                        required 
-                        pattern="[A-Za-zÀ-ÿ]{2,60}"
-                        autocomplete="given-name"/>
-                    </div>
-                </div>
-                <div class="row mb-3">
-                    <div class="col-4">
-                        <label for="family-name" class="col-form-label">Cognoms<b class="text-danger">*</b></label>
-                    </div>
-                    <div class="col-8">
-                        <input type="text" id="family-name" name="family-name" class="form-control"
-                        placeholder="Escriu aquí el teu cognom"
-                        title="Els cognoms han de contenir entre 2 i 60 caràcters"
-                        required 
-                        pattern="[A-Za-zÀ-ÿ]{2,60}"
-                        autocomplete="family-name"/>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-4">
-                        <label for="tel" class="col-form-label">Telèfon</label>
-                    </div>
-                    <div class="col-8">
-                        <input type="text" id="tel" name="tel" class="form-control"
-                        placeholder="Escriu aquí el teu telèfon"
-                        title="El telèfon ha de contenir entre 2 i 60 caràcters"
-                        required 
-                        pattern="[+]?[0-9]{9,15}"
-                        autocomplete="tel"/>
-                    </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-3">
-            <div class="col-md-8-mx-auto d-grid">
+            <div class="col-md-8 mx-auto d-grid">
                 <button type="submit" class="btn btn-success btn-lg">
                     Enviar
                 </button>
             </div>
         </div>
-      </form>
-    </div>
-  </body>
+
+    </form>
+</div>
+
+<script>
+    (() => {
+        'use strict'
+        const forms = document.querySelectorAll('.needs-validation')
+
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+
+                    let firstInvalid = form.querySelector(':invalid')
+                    if (firstInvalid) {
+                        firstInvalid.focus()
+                    }
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+                form.classList.add('was-validated')
+            }, false)
+        })
+    })();
+</script>
+
+</body>
 </html>
